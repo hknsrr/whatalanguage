@@ -1,0 +1,45 @@
+
+terser index.js -m reserved=["socket"] -c --toplevel -o index2.js
+
+CREATE TABLE `users` (
+  `id` int unsigned NOT NULL AUTO_INCREMENT,
+  `uname` varchar(100) NOT NULL,
+  `score` float unsigned NOT NULL,
+  `pass` varchar(100) NOT NULL,
+  `cdate` datetime DEFAULT NULL,
+  `udate` datetime DEFAULT CURRENT_TIMESTAMP,
+  `win` float unsigned NOT NULL DEFAULT '0',
+  `lose` float unsigned NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb3;
+
+CREATE TABLE `content1` (
+  `id` int(10) unsigned NOT NULL DEFAULT '0',
+  `en` text,
+  `tr` text,
+  `level` decimal(10,0) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE `tr` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `uname` varchar(25) NOT NULL,
+  `level1` int(10) unsigned DEFAULT NULL,
+  `level2` int(10) unsigned DEFAULT NULL,
+  `level3` int(10) unsigned DEFAULT NULL,
+  `level4` int(10) unsigned DEFAULT NULL,
+  `uid` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE `en` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `uname` varchar(25) NOT NULL,
+  `level1` int(10) unsigned DEFAULT NULL,
+  `level2` int(10) unsigned DEFAULT NULL,
+  `level3` int(10) unsigned DEFAULT NULL,
+  `level4` int(10) unsigned DEFAULT NULL,
+  `uid` int(10) unsigned DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;

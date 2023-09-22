@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta
+    http-equiv="X-UA-Compatible"
+    content="IE=edge"
+  >
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>What a Language? | Language Translate, Practice and Sentence Building Game</title>
+  <meta
+    name="Description"
+    content="Free interactive game for teaching sentence structure of languages. Translate, practice and improve your languages."
+  >
+  <meta
+    property="og:title"
+    content="What a Language? | Language Translate, Practice and Sentence Building Game"
+  >
+  <meta
+    property="og:description"
+    content="Free interactive game for teaching sentence structure of languages. Translate, practice and improve your languages."
+  >
+  <meta
+    property="og:type"
+    content="website"
+  >
+  <meta
+    property="og:url"
+    content="https://whatalanguage.com"
+  >
+  <meta
+    name="twitter:card"
+    content="website"
+  >
+  <meta
+    name="twitter:title"
+    content="What a Language? | Language Translate, Practice and Sentence Building Game"
+  >
+  <meta
+    name="twitter:url"
+    content="https://whatalanguage.com"
+  >
+  <meta
+    name="twitter:creator"
+    content="whatalanguage.com"
+  >
+  <meta
+    name="twitter:description"
+    content="Free interactive game for teaching sentence structure of languages. Translate, practice and improve your languages."
+  >
+  <meta
+    name="Author"
+    content="Hakan SARIER"
+  >
+  <meta
+    name="robots"
+    content="index,follow"
+  >
+  <link
+    rel="canonical"
+    href="https://whatalanguage.com"
+  >
+  <link
+    rel="icon"
+    type="image/png"
+    href="./images/favicon.png"
+  />
+  <link
+    rel="manifest"
+    href="../manifest.json"
+  >
+  <meta
+    name="theme-color"
+    content="#c52754"
+  >
+  <!-- ios support -->
+  <link
+    rel="apple-touch-icon"
+    href="./images/icons/icon-96x96.png"
+  >
+  <meta
+    name="apple-mobile-web-app-status-bar"
+    content="#c52754"
+  >
+  <link
+    rel="stylesheet"
+    href="./styles/style.css?v=4"
+  >
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-KLNHVFT3C1"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-KLNHVFT3C1');
+  </script>
+
+  <script
+    async
+    data-ad-frequency-hint="30s"
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5875206041978195"
+    crossorigin="anonymous"
+  >
+  </script>
+  <script>
+    window.adsbygoogle = window.adsbygoogle || [];
+    var adBreak = adConfig = function (o) { adsbygoogle.push(o); }
+  </script>
+
+</head>
+
+<body>
+
+  <!-- <div
+    id="currentScoreWrapper"
+    class="d-none"
+  >
+    Score: <span id="currentScore">-</span>
+  </div> -->
+
+  <div class="ranking-container">
+    <input
+      type="checkbox"
+      class="rank-button"
+      checked
+      id="btnRank"
+    />
+    <span class="rank-icon">&#11088;</span>
+    <div class="ranking">
+      <div class="ranking-head">
+        <h2
+          class="lingo"
+          lingo="bestplayers"
+        >Best Players</h2>
+      </div>
+      <ul
+        class="ranking-list"
+        id="rankingList"
+      >
+      </ul>
+    </div>
+  </div>
+
+  <div
+    class="profile-tooltip-container"
+    id="profileTooltipContainer"
+  >
+    <button
+      type="button"
+      id="btnCloseTooltip"
+    >X</button>
+    <div class="profile">
+      <div class="profile-head">
+        <div class="profile-head-content">
+          <!-- <h2 id="tooltipPlayer"></h2> -->
+          <!-- <div class="tooltip">
+            <span class="tooltip-icon">&#128161;</span>
+            <div class="tooltiptext lingo">Scoring is recalculated when you <b>beat</b> your best score, is calculated as;<br /> <b>10%</b> of level1, <b>30%</b> of level2, <b>50%</b> of level3, <b>70%</b> of level4, <b>90%</b> of level5</div>
+          </div> -->
+        </div>
+      </div>
+      <ul
+        class="profile-list"
+        id="profileList"
+      >
+      </ul>
+      <ul class="profile-list">
+        <!-- <li class="total-score">
+          <hr class="mt-2" />
+          <span
+            class="lingo"
+            lingo="score"
+          >Total Score</span>:
+          <span id="totalScore">0</span>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <a
+      href="/"
+      id="home"
+      title="home page"
+    >🏠</a>
+    <a
+      href="/login"
+      id="login"
+      class="d-none"
+      title="login"
+    >🔑</a>
+    <a
+      href="/logout"
+      id="logout"
+      class="d-none"
+      title="logout"
+    >🚪</a>
+    <a
+      href="/register"
+      id="register"
+      class="d-none"
+      title="register"
+    >📝</a>
+  </div>
+
+  <div
+    id="popupGameOver"
+    class="d-none popup restart"
+  >
+    <!-- <button
+      type="button"
+      class="btn-close"
+      id="js-btn-close-restart-popup"
+    >-</button> -->
+
+    <!-- <div>Time is up!</div>
+    <div>Your score: <span id="score"></span></div> -->
+    <button
+      id="btnRestart"
+      class="btn btn-restart"
+    >Restart</button>
+    <!-- <div
+      class="sign-up d-none"
+      id="signup"
+    >Do you want to save your score?&nbsp;<a href="/login">Let's login!</a>
+  </div> -->
+  </div>
+
+  <div
+    id="popupStart"
+    class="popup start"
+  >
+    <div class="level popup-grid">
+      <span>Level:</span>
+      <select
+        name="level"
+        id="level"
+        class="bubble"
+      >
+        <option
+          value="1"
+          selected
+        >1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+    <div class="languages">
+      <div class="popup-grid">
+        <span>To:</span>
+        <select
+          name="lang2"
+          id="lang2"
+          class="bubble"
+        >
+          <option value="tr">Turkish</option>
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="es">Spanish</option>
+          <option value="de">Deutsch</option>
+          <option value="it">Italian</option>
+          <option value="fa">Farsi</option>
+        </select>
+      </div>
+      <div class="popup-grid">
+        <span>&#8673;</span>
+        <button
+          id="btnSwap"
+          class="bubble bubble--highlight btn-swap"
+          style="margin-left: 70px !important;"
+        >
+          <i style="font-size: 25px; margin-top: -5px !important;">&#8597;</i>
+        </button>
+      </div>
+      <div class="popup-grid">
+        <span>From:</span>
+        <select
+          name="lang1"
+          id="lang1"
+          class="bubble"
+        >
+          <option value="tr">Turkish</option>
+          <option value="en">English</option>
+          <option value="fr">French</option>
+          <option value="es">Spanish</option>
+          <option value="de">Deutsch</option>
+          <option value="it">Italian</option>
+          <option value="fa">Farsi</option>
+        </select>
+      </div>
+    </div>
+
+    <div style="display: flex;
+    justify-content: space-evenly;
+    width: 100%;">
+
+
+      <a href="/match">
+        <div
+          class="bubble bubble--highlight"
+        >
+          MATCH
+        </div>
+      </a>
+
+
+      <div
+        id="btnStart"
+        class="bubble bubble--highlight"
+      >
+        TRAINING
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+  <div
+    id="paper"
+    class="d-none"
+  >
+    <div class="time-container">
+      <progress
+        value="0"
+        id="progressBar"
+      ></progress>
+    </div>
+    <!-- <div class="point-container">
+      <span id="point"></span>
+      <i style="font-size: 10px; ">point</i>
+    </div> -->
+    <div class="next-container">
+      <button
+        id="btnNext"
+        class="d-none"
+      >&#10159;</button>
+      <button
+        id="btnAnswer"
+        class="d-none btn btn-answer"
+      >See the Answer?</button>
+    </div>
+    <div id="pattern">
+      <div id="result"></div>
+
+      <div id="words"></div>
+
+      <div id="blurred">
+        <div id="translate">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="cookie-popup d-none"
+    id="js-cookie-popup"
+  >
+    <small>
+      We use cookies on our site limited to the purposes stated in our cookie policy and in accordance with the
+      legislation. By browsing the site, you consent to cookies.<br /> For details,
+      <a href="/cookie-policy">you can review our cookie policy.</a>.
+      <button
+        type="button"
+        class="btn-close"
+        id="js-btn-close-cookie-popup"
+      >X</button>
+    </small>
+  </div>
+
+
+  <script
+    type="text/javascript"
+    src="/socket.io/socket.io.js"
+  ></script>
+  <!-- <script
+    type="text/javascript"
+    src="../app.js?v=4"
+  ></script> -->
+  <script src="/scripts/index.js?v=4"></script>
+</body>
+
+</html>

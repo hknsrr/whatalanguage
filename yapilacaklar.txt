@@ -1,0 +1,19 @@
+db şifre değiş
+yeni cümleler eklemeye devam et
+
+scoreboard 100'den fazla olursa?
+kullanıcı client tarafında puanı hack'leyememeli.
+login olunca önceki toplanan puanları otomatik kaydet scoreboarda kullanıcın
+sw cache update?
+anlık scorum görebileyim
+socket isimlerini kısalt
+5. seviyeyi ekle
+localStorage ekle yapılmış dil seçimini ve level
+invalid cümle son word kırmızı scale animasyon
+daha güzel bir tasarım
+selectlerden css kaldır
+yeni dil eklemeyi dinamik yap
+footer bar daha da güzelleştir iconlaştır
+multilanguage yap projeyi lingo ları aktifleştir
+google analytics ekle
+tooltip ekle

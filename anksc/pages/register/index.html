@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | What a Language?</title>
+  <meta name="Description" content="Free interactive game for teaching sentence structure of languages. Translate, practice and improve your languages.">
+  <meta property="og:title" content="What a Language? | Language Translate, Practice and Sentence Building Game">
+  <meta property="og:description" content="Free interactive game for teaching sentence structure of languages. Translate, practice and improve your languages.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://whatalanguage.com">
+  <meta name="twitter:card" content="website">
+  <meta name="twitter:title" content="What a Language? | Language Translate, Practice and Sentence Building Game">
+  <meta name="twitter:url" content="https://whatalanguage.com">
+  <meta name="twitter:creator" content="whatalanguage.com">
+  <meta name="twitter:description" content="Free interactive game for teaching sentence structure of languages. Translate, practice and improve your languages.">
+  <meta name="Author" content="Hakan SARIER">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://whatalanguage.com">
+  <link rel="icon" type="image/png" href="./images/favicon.png" />
+  <link rel="stylesheet" href="./styles/auth.css">
+  <link rel="manifest" href="../../manifest.json">
+  <meta name="theme-color" content="#c52754">
+  <!-- ios support -->
+  <link rel="apple-touch-icon" href="./images/icons/icon-96x96.png">
+  <meta name="apple-mobile-web-app-status-bar" content="#c52754">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KLNHVFT3C1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-KLNHVFT3C1');
+  </script>
+
+</head>
+
+<body>
+  <div class="loading d-none" id="loading">
+    <div class="circle">&#127758;</div>
+    <div class="circle">&#127758;</div>
+    <div class="circle">&#127758;</div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+    <div class="shadow"></div>
+  </div>
+  <div class="pitch">
+    <h1 class="title">REGISTER</h1>
+    <form onsubmit="event.preventDefault(); validateForm();" class="form">
+      <div id="message" class="message"></div>
+      <div>
+        <input type="text" id="uname" placeholder="User Name" required maxlength="25">
+      </div>
+      <div class="d-flex">
+        <input type="password" id="pass" placeholder="Password" required maxlength="25">
+        <span class="icon pass-visible">&#129488;</span>
+      </div>
+      <div class="d-flex">
+        <input type="password" id="pass-confirm" placeholder="Password Confirm" required maxlength="25">
+        <span class="icon pass-visible">&#129488;</span>
+      </div>
+      <div>
+        <button type="submit">New User</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- <script type="text/javascript" src="../app.js"></script> -->
+  <script type="text/javascript" src="/scripts/register.js"></script>
+
+</body>
+
+</html>

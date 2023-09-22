@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: rgb(0 0 0 / 6%);
+  background: url('data:image/svg+xml;utf8,<svg width="100" height="100" transform="rotate(0)" opacity="0.2" version="1.1" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><g  fill="%23250E17"><circle cx="25" cy="25" r="12.5"/><circle cx="75" cy="75" r="12.5"/><circle cx="75" cy="25" r="12.5"/><circle cx="25" cy="75" r="12.5"/></g></svg>'),
+    #c52754;
+  background-size: 7px, 100%;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace, cursive, sans-serif;
+}
+
+.blur {
+  filter: blur(30px);
+  pointer-events: none;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.loading {
+  width: 200px;
+  height: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  animation: fade .3s forwards ease-in;
+  opacity: 0;
+  z-index: 99;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.loading .circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  /* border-radius: 50%; */
+  /* background-color: #00c502; */
+  left: 15%;
+  transform-origin: 50%;
+  animation: circle .3s alternate infinite ease;
+  /* border: 1px solid black; */
+  top: 60px;
+}
+
+@keyframes circle {
+  0% {
+    top: 60px;
+    height: 5px;
+    border-radius: 50px 50px 25px 25px;
+    transform: scaleX(1.7);
+  }
+
+  40% {
+    height: 20px;
+    border-radius: 50%;
+    transform: scaleX(1);
+  }
+
+  100% {
+    top: 0%;
+  }
+}
+
+.loading .circle:nth-child(2) {
+  left: 45%;
+  animation-delay: .1s;
+}
+
+.loading .circle:nth-child(3) {
+  left: auto;
+  right: 15%;
+  animation-delay: .2s;
+}
+
+.loading .shadow {
+  width: 20px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, .5);
+  position: absolute;
+  top: 75px;
+  transform-origin: 50%;
+  box-shadow: none;
+  left: 15%;
+  animation: shadow .3s alternate infinite ease;
+}
+
+@keyframes shadow {
+  0% {
+    transform: scaleX(1.5);
+  }
+
+  40% {
+    transform: scaleX(1);
+    opacity: .7;
+  }
+
+  100% {
+    transform: scaleX(.2);
+    opacity: .4;
+  }
+}
+
+.loading .shadow:nth-child(4) {
+  left: 45%;
+  animation-delay: .2s
+}
+
+.loading .shadow:nth-child(5) {
+  left: auto;
+  right: 15%;
+  animation-delay: .3s;
+}
+
+.form {
+  background: #f8f4e5;
+  padding: 0 25px 25px 25px;
+  border: 2px solid #000;
+  box-shadow: 15px 15px 1px #c52754, 15px 15px 1px 2px #000;
+  margin: 0 10px;
+}
+
+.title {
+  margin: 0;
+  text-align: center;
+  color: #ffcd28;
+  text-shadow: -3px 0 0 #000;
+  margin-bottom: 35px;
+}
+
+.pitch {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 35px;
+  margin-bottom: 35px;
+  border: none;
+  border-bottom: 2px solid black;
+  background: #f8f4e5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: black;
+}
+
+input:focus,
+input:hover {
+  border-bottom: 3px solid #017302;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  margin: 0 auto;
+  line-height: 35px;
+  padding: 0 20px;
+  background: #ffcd28;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px #c52754, 3px 3px 1px 1px black;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.button:hover {
+  box-shadow: -5px -5px 20px #c52754, 5px 5px 20px #014501;
+  background-image: repeating-linear-gradient(-25deg, #047205, #005800 4px, transparent 3px, transparent 1px);
+  background-size: 12px 16px;
+  -webkit-animation: pitch-animation .5s infinite linear;
+  animation: pitch-animation .5s infinite linear;
+  -webkit-animation-delay: 0;
+  -webkit-transition: all 1.25s linear;
+  transition: all 1.25s linear;
+}
+
+@-moz-keyframes pitch-animation {
+  100% {
+    background-position: 0px 2em;
+  }
+}
+
+@-webkit-keyframes pitch-animation {
+  100% {
+    background-position: 0px 2em;
+  }
+}
+
+@-o-keyframes pitch-animation {
+  100% {
+    background-position: 0px 2em;
+  }
+}
+
+@keyframes pitch-animation {
+  100% {
+    background-position: 0px 2em;
+  }
+}
+
+.button:active {
+  box-shadow: inset 1px 1px 2px #014501, inset -1px -1px 2px #fff;
+}
+
+.message {
+  color: red;
+  margin: 30px;
+}
+
+.register {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.invalid-input {
+  border-bottom: 3px solid red;
+  border-left: 3px solid red;
+  border-right: 3px solid red;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.icon {
+  cursor: pointer;
+}
