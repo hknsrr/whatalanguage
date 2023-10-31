@@ -383,17 +383,7 @@ CREATE TABLE `de` (
 --
 
 INSERT INTO `de` (`id`, `uname`, `level1`, `level2`, `level3`, `level4`, `level5`, `uid`) VALUES
-(1, 'test28', 12, 0, 0, 0, NULL, 1),
-(2, 'test29', 3, 0, 0, 0, NULL, 2),
-(3, 'hakan', 9, NULL, NULL, NULL, NULL, 3),
-(4, 'eraybuykor', NULL, NULL, NULL, NULL, NULL, 4),
-(5, 'anilaynaci', NULL, NULL, NULL, NULL, NULL, 5),
-(6, 'ramboberk', NULL, NULL, NULL, NULL, NULL, 6),
-(7, 'MFO34', NULL, NULL, NULL, NULL, NULL, 7),
-(8, 'baycanerkal', NULL, NULL, NULL, NULL, NULL, 8),
-(9, 'ayse', NULL, NULL, NULL, NULL, NULL, 9),
-(10, 'erayb', NULL, NULL, NULL, NULL, NULL, 10),
-(11, 'regular ', NULL, NULL, NULL, NULL, NULL, 11);
+(1, 'hakan', 9, NULL, NULL, NULL, NULL, 1);
 
 -- --------------------------------------------------------
 
@@ -417,17 +407,8 @@ CREATE TABLE `en` (
 --
 
 INSERT INTO `en` (`id`, `uname`, `level1`, `level2`, `level3`, `level4`, `level5`, `uid`) VALUES
-(1, 'test28', 13, NULL, NULL, NULL, 0, 1),
-(2, 'test29', NULL, NULL, NULL, NULL, 0, 2),
-(3, 'hakan', 8, 5, 13, NULL, 0, 3),
-(4, 'eraybuykor', NULL, NULL, NULL, NULL, NULL, 4),
-(5, 'anilaynaci', 4, NULL, NULL, NULL, NULL, 5),
-(6, 'ramboberk', 3, NULL, NULL, NULL, NULL, 6),
-(7, 'MFO34', NULL, NULL, NULL, NULL, NULL, 7),
-(8, 'baycanerkal', NULL, NULL, NULL, NULL, NULL, 8),
-(9, 'ayse', 6, NULL, NULL, NULL, NULL, 9),
-(10, 'erayb', NULL, NULL, NULL, NULL, NULL, 10),
-(11, 'regular ', NULL, NULL, NULL, NULL, NULL, 11);
+(1, 'hakan', 9, NULL, NULL, NULL, NULL, 1);
+
 
 -- --------------------------------------------------------
 
@@ -451,17 +432,8 @@ CREATE TABLE `es` (
 --
 
 INSERT INTO `es` (`id`, `uname`, `level1`, `level2`, `level3`, `level4`, `level5`, `uid`) VALUES
-(1, 'test28', 12, 0, 0, 0, NULL, 1),
-(2, 'test29', 3, 0, 0, 0, NULL, 2),
-(3, 'hakan', 9, NULL, NULL, NULL, NULL, 3),
-(4, 'eraybuykor', NULL, NULL, NULL, NULL, NULL, 4),
-(5, 'anilaynaci', NULL, NULL, NULL, NULL, NULL, 5),
-(6, 'ramboberk', NULL, NULL, NULL, NULL, NULL, 6),
-(7, 'MFO34', NULL, NULL, NULL, NULL, NULL, 7),
-(8, 'baycanerkal', NULL, NULL, NULL, NULL, NULL, 8),
-(9, 'ayse', NULL, NULL, NULL, NULL, NULL, 9),
-(10, 'erayb', NULL, NULL, NULL, NULL, NULL, 10),
-(11, 'regular ', NULL, NULL, NULL, NULL, NULL, 11);
+(1, 'hakan', 9, NULL, NULL, NULL, NULL, 1);
+
 
 -- --------------------------------------------------------
 
@@ -485,17 +457,8 @@ CREATE TABLE `fa` (
 --
 
 INSERT INTO `fa` (`id`, `uname`, `level1`, `level2`, `level3`, `level4`, `level5`, `uid`) VALUES
-(1, 'test28', 0, 0, 0, 0, NULL, 1),
-(2, 'test29', 0, 0, 0, 0, NULL, 2),
-(3, 'hakan', 0, NULL, NULL, NULL, NULL, 3),
-(4, 'eraybuykor', NULL, NULL, NULL, NULL, NULL, 4),
-(5, 'anilaynaci', NULL, NULL, NULL, NULL, NULL, 5),
-(6, 'ramboberk', NULL, NULL, NULL, NULL, NULL, 6),
-(7, 'MFO34', NULL, NULL, NULL, NULL, NULL, 7),
-(8, 'baycanerkal', 0, NULL, NULL, NULL, NULL, 8),
-(9, 'ayse', NULL, NULL, NULL, NULL, NULL, 9),
-(10, 'erayb', NULL, NULL, NULL, NULL, NULL, 10),
-(11, 'regular ', NULL, NULL, NULL, NULL, NULL, 11);
+(1, 'hakan', 9, NULL, NULL, NULL, NULL, 1);
+
 
 -- --------------------------------------------------------
 
@@ -519,17 +482,8 @@ CREATE TABLE `fr` (
 --
 
 INSERT INTO `fr` (`id`, `uname`, `level1`, `level2`, `level3`, `level4`, `level5`, `uid`) VALUES
-(1, 'test28', 12, 0, 0, 0, NULL, 1),
-(2, 'test29', 3, 0, 0, 0, NULL, 2),
-(3, 'hakan', 9, NULL, NULL, NULL, NULL, 3),
-(4, 'eraybuykor', NULL, NULL, NULL, NULL, NULL, 4),
-(5, 'anilaynaci', NULL, NULL, NULL, NULL, NULL, 5),
-(6, 'ramboberk', NULL, NULL, NULL, NULL, NULL, 6),
-(7, 'MFO34', NULL, NULL, NULL, NULL, NULL, 7),
-(8, 'baycanerkal', NULL, NULL, NULL, NULL, NULL, 8),
-(9, 'ayse', NULL, NULL, NULL, NULL, NULL, 9),
-(10, 'erayb', NULL, NULL, NULL, NULL, NULL, 10),
-(11, 'regular ', NULL, NULL, NULL, NULL, NULL, 11);
+(1, 'hakan', 9, NULL, NULL, NULL, NULL, 1);
+
 
 -- --------------------------------------------------------
 
@@ -553,17 +507,8 @@ CREATE TABLE `it` (
 --
 
 INSERT INTO `it` (`id`, `uname`, `level1`, `level2`, `level3`, `level4`, `level5`, `uid`) VALUES
-(1, 'test28', 0, 0, 0, 0, NULL, 1),
-(2, 'test29', 0, 0, 0, 0, NULL, 2),
-(3, 'hakan', 0, NULL, NULL, NULL, NULL, 3),
-(4, 'eraybuykor', NULL, NULL, NULL, NULL, NULL, 4),
-(5, 'anilaynaci', NULL, NULL, NULL, NULL, NULL, 5),
-(6, 'ramboberk', NULL, NULL, NULL, NULL, NULL, 6),
-(7, 'MFO34', NULL, NULL, NULL, NULL, NULL, 7),
-(8, 'baycanerkal', 0, NULL, NULL, NULL, NULL, 8),
-(9, 'ayse', NULL, NULL, NULL, NULL, NULL, 9),
-(10, 'erayb', NULL, NULL, NULL, NULL, NULL, 10),
-(11, 'regular ', NULL, NULL, NULL, NULL, NULL, 11);
+(1, 'hakan', 9, NULL, NULL, NULL, NULL, 1);
+
 
 -- --------------------------------------------------------
 
@@ -587,17 +532,8 @@ CREATE TABLE `tr` (
 --
 
 INSERT INTO `tr` (`id`, `uname`, `level1`, `level2`, `level3`, `level4`, `level5`, `uid`) VALUES
-(1, 'test28', 12, 0, 0, 0, NULL, 1),
-(2, 'test29', 3, 0, 0, 0, NULL, 2),
-(3, 'hakan', 20, NULL, NULL, NULL, NULL, 3),
-(4, 'eraybuykor', NULL, NULL, NULL, NULL, NULL, 4),
-(5, 'anilaynaci', NULL, NULL, NULL, NULL, NULL, 5),
-(6, 'ramboberk', NULL, NULL, NULL, NULL, NULL, 6),
-(7, 'MFO34', NULL, NULL, NULL, NULL, NULL, 7),
-(8, 'baycanerkal', 12, NULL, NULL, NULL, NULL, 8),
-(9, 'ayse', 1, NULL, NULL, NULL, NULL, 9),
-(10, 'erayb', NULL, NULL, NULL, NULL, NULL, 10),
-(11, 'regular ', NULL, NULL, NULL, NULL, NULL, 11);
+(1, 'hakan', 9, NULL, NULL, NULL, NULL, 1);
+
 
 -- --------------------------------------------------------
 
@@ -619,17 +555,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `uname`, `score`, `pass`, `cdate`, `udate`) VALUES
-(1, 'test28', 5, '$2a$10$bUuvEoKtJC5oF8HTh55XKO/rCG.EMhroyc6bOcEueL56CPNH0idZG', '2022-10-11 00:28:49', '2022-10-10 21:28:48'),
-(2, 'test29', 0, '$2a$10$fwGyqfoeZZk0gq5uFTf0Lemz9ROceDurBVXG0q4eqN0vIjPsBF77i', '2022-10-11 17:35:35', '2022-10-11 14:35:34'),
-(3, 'hakan', 13.5, '$2a$10$U73ZJJOiE0WOl1IWf1UNhOiEMEzvCsVbbJ5//DNlpnJzM9n2yhsPe', '2022-10-12 21:08:48', '2022-10-12 21:08:48'),
-(4, 'eraybuykor', 0, '$2a$10$erAXwtYs5z/t.NhcraqBueIbQeYFuiLJuFymb0ulNgJHx55mcbcA6', '2022-10-16 18:16:41', '2022-10-16 18:16:40'),
-(5, 'anilaynaci', 0.4, '$2a$10$TV2A5ylC/xcr9bFYXE2gbOv7yaZrlpmVdzxs.I6t6.vUxxIh0e1DC', '2022-10-16 18:20:30', '2022-10-16 18:20:29'),
-(6, 'ramboberk', 0.3, '$2a$10$CH55JYeQHYJyyzA.9gkxiOc6BfJuGPgau/TjKhOcLI94EfpJlu0XW', '2022-10-16 23:22:06', '2022-10-16 23:22:05'),
-(7, 'MFO34', 0, '$2a$10$gkAEteJ0ukWFPuRHbygIZOiP.TLG2tjA9HwMfM6Au05i.iTeTnBc.', '2022-10-16 23:34:27', '2022-10-16 23:34:27'),
-(8, 'baycanerkal', 1.2, '$2a$10$V9BGq1Pic4ofZK96WDShmur.Y/7VLTmCZdnMRV3T7OsV3c5S19yFa', '2022-10-17 02:57:03', '2022-10-17 02:57:03'),
-(9, 'ayse', 0.7, '$2a$10$JSHAgunIQf4lmnMlg9pno.PRmLR4ZpMX6tHWjsNTevHqj3C3gHbJO', '2022-10-21 13:50:03', '2022-10-21 13:50:02'),
-(10, 'erayb', 0, '$2a$10$Ko5go5QXd4einuMbaMIeieTHFSQJ9t5whIRUW440HrPgN6YT5.Jvq', '2022-10-26 13:31:34', '2022-10-26 13:31:33'),
-(11, 'regular ', 0, '$2a$10$.P8SMXluddUhhDm/ls0qLuz/8oxLrqLolta6lSlFu1yZLGpUrUlOO', '2022-10-28 14:04:51', '2022-10-28 14:04:51');
+(3, 'hakan', 13.5, '$2a$10$U73ZJJOiE0WOl1IWf1UNhOiEMEzvCsVbbJ5//DNlpnJzM9n2yhsPe', '2022-10-12 21:08:48', '2022-10-12 21:08:48');
+
 
 --
 -- Dökümü yapılmış tablolar için indeksler
